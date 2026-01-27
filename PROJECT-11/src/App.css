@@ -1,0 +1,60 @@
+/* ===== NAVBAR ===== */
+
+.nav {
+  width: 100%;
+  background: linear-gradient(135deg, #94c1f4, #aed1f8);
+  padding: 14px 0;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.nav .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.nav .btn {
+  text-decoration: none;
+  color: #fbfbfd;
+  padding: 8px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 999px;
+  transition: all 0.3s ease;
+  background: #014af7;
+}
+
+.nav .btn:hover {
+  background: #ffffff;
+  color: #2a0de7;
+  transform: translateY(-1px);
+}
+
+/* Active link (optional, works if NavLink used later) */
+.nav .btn.active {
+  background: #f2f6f7;
+  color: #9595e9;
+}
+
+/* Hide unused SVG outline safely */
+.nav .outline {
+  display: none;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+  .nav .container {
+    justify-content: center;
+  }
+
+  .nav .btn {
+    font-size: 13px;
+    padding: 7px 14px;
+  }
+}
